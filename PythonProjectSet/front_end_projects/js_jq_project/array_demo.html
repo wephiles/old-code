@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>动态数据</title>
+</head>
+<body>
+<ul id="city">
+    <!--    <li>beijing</li>-->
+</ul>
+
+<script type="text/javascript">
+    var city_list = ["beijing", "shanghai", "shenzhen", "wuhan", "guangzhou"];
+    for (var index in city_list) {
+        var text = city_list[index];
+        // 添加文本
+        var tag_obj = document.createElement("li");
+
+        // 在li标签中写入内容
+        tag_obj.innerText = text
+
+        // 添加到标签里面
+        var parent = document.getElementById("city")
+
+        parent.appendChild(tag_obj)
+    }
+</script>
+</body>
+</html>

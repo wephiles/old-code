@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .c1 {
+            color: red;
+            font-size: 20px;
+        }
+
+        .c1:hover {
+            color: green;
+            font-size: 30px;
+        }
+
+        .c2 {
+            height: 50px;
+            width: 50px;
+            border: 1px solid yellow;
+        }
+
+        .c2:hover {
+            border: 2px solid blue;
+        }
+
+        .download {
+            display: none;
+        }
+
+        .app:hover .download{
+            display: block;
+        }
+
+        .app:hover .title{
+            color: red;
+        }
+    </style>
+</head>
+<body>
+<div class="c1"> 计算机 </div>
+<div class="c2"> 技术 </div>
+
+<div class="app">
+    <div class="title">
+        点击下载APP
+    </div>
+    <div class="download">
+        <img src="two_wei_code.png"/>
+    </div>
+</div>
+</body>
+</html>

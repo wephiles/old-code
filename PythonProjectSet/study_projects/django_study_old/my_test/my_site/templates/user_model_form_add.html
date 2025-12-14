@@ -1,0 +1,55 @@
+{% extends 'layout.html' %}
+{% load static %}
+
+{% block css %}
+	<link rel="stylesheet"
+	      href="{% static 'plugins/bootstrap-datepicker-1.6.4-dist/css/bootstrap-datepicker.min.css' %}">
+{% endblock %}
+
+{% block title %}
+	<title>瑾瑜-这世界有那么多人，人群里，敞着一扇门</title>
+{% endblock %}
+
+{% block content %}
+	<div class="container">
+		<div class="panel panel-default" style="margin-top: 10px;">
+			<div class="panel-heading">
+				<h3 class="panel-title">
+					添加用户
+				</h3>
+			</div>
+			<div class="panel-body">
+				<form method="post" novalidate>
+					{% for field in form %}
+						<div class="form-group">
+							{% csrf_token %}
+							<label style="margin-left: 4px;">{{ field.label }}</label>
+							{{ field }}
+							<!-- 错误信息 是个列表 -->
+							<span style="color: red;">{{ field.errors.0 }}</span>
+						</div>
+					{% endfor %}
+					<button type="submit" class="btn btn-primary">提交</button>
+				</form>
+			</div>
+		</div>
+	</div>
+{% endblock %}
+
+{% block js %}
+	<script src="{% static '/plugins/bootstrap-datepicker-1.6.4-dist/js/bootstrap-datepicker.min.js' %}"></script>
+	<script src="{% static '/plugins/bootstrap-datepicker-1.6.4-dist/locales/bootstrap-datepicker.zh-CN.min.js' %}"></script>
+	<script type="text/javascript">
+        $(function () {
+            $("#id_create_time").datepicker({
+                format: "yyyy-mm-dd",
+                {#startDate: "0",#}
+                {#startDate: new Date(),#}
+                language: "zh-CN",
+                autoclose: true,
+                clearBtn: true,
+                todayHighlight: true
+            })
+        })
+	</script>
+{% endblock %}

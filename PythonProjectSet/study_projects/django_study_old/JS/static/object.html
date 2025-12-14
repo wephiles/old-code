@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>动态表格</title>
+</head>
+<body>
+<table border="1">
+	<thead>
+	<tr>
+		<th>ID</th>
+		<th>name</th>
+		<th>age</th>
+	</tr>
+	</thead>
+	<tbody id="body">
+	<!-- <tr>
+		<td>1</td>
+		<td>1</td>
+		<td>1</td>
+	</tr> -->
+	</tbody>
+</table>
+
+<script type="text/javascript">
+	var dataList = [
+		{id: 100001, name: "jinyu", age: 19},
+		{id: 100002, name: "qingju", age: 19},
+		{id: 100003, name: "qiongjiu", age: 19},
+		{id: 100004, name: "qingyao", age: 19},
+		{id: 100005, name: "zhengze", age: 19}
+	];
+	for (index in dataList) {
+		var info = dataList[index] ;
+		var tr = document.createElement("tr");
+		for (var key in info) {
+			var text = info[key];
+			var td = document.createElement("td");
+			td.innerText = text;
+			tr.appendChild(td);
+		}
+		// console.log(tr)
+		var bodyTag = document.getElementById("body");
+		bodyTag.appendChild(tr);
+	}
+</script>
+</body>
+</html>

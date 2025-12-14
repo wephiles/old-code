@@ -1,0 +1,14 @@
+<library>
+    <book id="1001">
+        <title id="1">XML Fundamentals</title>
+        <author>John Doe</author>
+        <year update="2024-02-06">2021-01-25</year>
+        <neighbor name="a" />
+    </book>
+    <book id="1002">
+        <title>Learning XML</title>
+        <author>Jane Smith</author>
+        <year>2022</year>
+        <neighbor name="b" />
+    </book>
+</library>

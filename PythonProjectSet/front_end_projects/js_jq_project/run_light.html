@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<span id="txt">
+    欢迎来到中华人民共和国！
+</span>
+
+<script>
+    function light() {
+        // 去html中找到某个标签并获取内容(DOM)
+        let tag_obj = document.getElementById("txt");
+        let data_string = tag_obj.innerText;
+        console.log(data_string);
+
+        // 动态起来 一直把第一个字符获取到 放到最后面
+        let first_char = data_string[0];
+        let other_string = data_string.substring(1, data_string.length);
+        let new_string = other_string + first_char
+
+        console.log(new_string)
+
+        // 在html标签中更新内容
+        tag_obj.innerText = new_string
+    }
+
+    // js中的定时器
+    setInterval(light, 1000);
+</script>
+</body>
+</html>

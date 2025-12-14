@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .menus {
+            height: 800px;
+            width: 100px;
+            border: 1px solid red;
+        }
+
+        .menus .header {
+            background-color: gold;
+            padding: 10px 5px;
+            cursor: pointer;
+        }
+
+        .menus .content a {
+            display: block;
+            padding: 10px 5px;
+            border-bottom: 1px dotted #dddddd;
+        }
+
+        .hide {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+<div class="menus">
+    <div class="item">
+        <div class="header" onclick="click_me(this)">abcdef</div>
+        <div class="content hide">
+            <a>aaa</a>
+            <a>bbb</a>
+            <a>ccc</a>
+            <a>ddd</a>
+            <a>eee</a>
+            <a>fff</a>
+        </div>
+    </div>
+
+    <div class="item">
+        <div class="header" onclick="click_me(this)">qwerty</div>
+        <div class="content hide">
+            <a>qqq</a>
+            <a>www</a>
+            <a>eee</a>
+            <a>rrr</a>
+            <a>ttt</a>
+            <a>yyy</a>
+        </div>
+    </div>
+
+    <div class="item">
+        <div class="header" onclick="click_me(this)">abcdef</div>
+        <div class="content hide">
+            <a>aaa</a>
+            <a>bbb</a>
+            <a>ccc</a>
+            <a>ddd</a>
+            <a>eee</a>
+            <a>fff</a>
+        </div>
+    </div>
+
+    <div class="item">
+        <div class="header" onclick="click_me(this)">qwerty</div>
+        <div class="content hide">
+            <a>qqq</a>
+            <a>www</a>
+            <a>eee</a>
+            <a>rrr</a>
+            <a>ttt</a>
+            <a>yyy</a>
+        </div>
+    </div>
+</div>
+
+<script src="./static/js/jquery37/jquery-3.7.1.js"></script>
+<script>
+    // 利用jQuery中的功能实现某些效果
+
+    function click_me(self) {
+        // $(self) 表示当前点击的标签
+        var has_class = $(self).next().hasClass("hide");
+        if (has_class) {
+            $(self).next().removeClass("hide");
+            $(self).parent().siblings().find(".content").addClass("hide")
+        } else {
+            $(self).next().addClass("hide");
+        }
+
+    }
+</script>
+</body>
+</html>

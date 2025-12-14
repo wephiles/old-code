@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>添加数据信息</title>
+	<link rel="stylesheet" href="./static/plugins/bootstrap-3.4.1/css/bootstrap.css">
+	<link rel="stylesheet" href="./static/plugins/font-awesome/font-awesome-4.7.0/css/font-awesome.css">
+	<link rel="stylesheet" href="./static/plugins/bootstrap-datepicker-1.6.4-dist/css/bootstrap-datepicker.min.css">
+	<style>
+		.own-container {
+			margin-top: 20px;
+			width: 1100px;
+		}
+	</style>
+</head>
+<body>
+<div class="container own-container">
+	<form class="form-horizontal">
+		<div class="row clearfix">
+			<div class="col-xs-6">
+				<div class="form-group">
+					<label for="inputEmail3" class="col-sm-2 control-label">姓名</label>
+					<div class="col-sm-10">
+						<input type="email" class="form-control" id="inputEmail3" placeholder="姓名">
+					</div>
+				</div>
+			</div>
+			<div class="col-xs-6">
+				<div class="form-group">
+					<label for="inputEmail3" class="col-sm-2 control-label">年龄</label>
+					<div class="col-sm-10">
+						<input type="email" class="form-control" id="inputEmail3" placeholder="年龄">
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<div class="row clearfix">
+			<div class="col-xs-6">
+				<div class="form-group">
+					<label for="inputEmail3" class="col-sm-2 control-label">薪资</label>
+					<div class="col-sm-10">
+						<input type="email" class="form-control" id="inputEmail3" placeholder="薪资">
+					
+					</div>
+				</div>
+			</div>
+			<div class="col-xs-6">
+				<div class="form-group">
+					<label for="inputEmail3" class="col-sm-2 control-label">部门</label>
+					<div class="col-sm-10">
+						<!--<input type="email" class="form-control" id="inputEmail3" placeholder="部门">-->
+						<div>
+							<button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu2"
+							        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+								选择你所在的部门
+								<span class="caret"></span>
+							</button>
+							<ul class="dropdown-menu" aria-labelledby="dropdownMenu2" style="width: 45px;">
+								<li><a href="#">IT部门</a></li>
+								<li><a href="#">销售部门</a></li>
+								<li><a href="#">运营部门</a></li>
+								<!--						<li role="separator" class="divider"></li>-->
+								<!--						<li><a href="#">Separated link</a></li>-->
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<div class="row clearfix">
+			<div class="col-xs-6">
+				<div class="form-group">
+					<label for="inputEmail3" class="col-sm-2 control-label">入职日期</label>
+					<div class="col-sm-10 date">
+						<input type="text" class="form-control" id="datetime" placeholder="入职日期">
+					</div>
+				</div>
+			</div>
+			<div class="col-xs-6">
+				<div class="form-group">
+					<label for="inputPassword3" class="col-sm-2 control-label">Password</label>
+					<div class="col-sm-10">
+						<input type="password" class="form-control" id="inputPassword3" placeholder="Password">
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<div class="row clearfix">
+			<div class="col-xs-6">
+				<div class="form-group">
+					<div class="col-sm-offset-2 col-sm-10">
+						<button type="submit" class="btn btn-default">Sign in</button>
+					</div>
+				</div>
+			</div>
+			<div class="col-xs-6">
+				<div class="form-group">
+					<div class="col-sm-offset-2 col-sm-10">
+						<div class="checkbox">
+							<label>
+								<input type="checkbox"> Remember me
+							</label>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</form>
+
+</div>
+<!-- 下面两个顺序不能颠倒 由于BootStrap依赖于JQuery，只能先引入JQuery，后引入BootStrap -->
+<script src="./static/js/jquery-3.5.1/jquery-3.5.1/jquery-3.5.1.min.js"></script>
+<script src="./static/plugins/bootstrap-3.4.1/js/bootstrap.min.js"></script>
+<script src="./static/plugins/bootstrap-datepicker-1.6.4-dist/js/bootstrap-datepicker.min.js"></script>
+<script src="./static/plugins/bootstrap-datepicker-1.6.4-dist/locales/bootstrap-datepicker.zh-CN.min.js"></script>
+<script type="text/javascript">
+	$(function () {
+		$("#datetime").datepicker({
+			format : "yyyy-mm-dd",
+			startDate: "0",
+			language: "zh-CN",
+			autoclose: true,
+			clearBtn: true,
+			todayHighlight: true
+		})
+	})
+</script>
+</body>
+</html>

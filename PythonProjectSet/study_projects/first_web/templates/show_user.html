@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>见与不见都与你一生相拥。</title>
+</head>
+<body>
+<h1>用户列表</h1>
+
+
+<table border="1">
+    <thead>
+    <tr>
+        <th>
+            #
+        </th>
+        <th>
+            用户名
+        </th>
+        <th>
+            用户密码
+        </th>
+        <th>
+            手机号
+        </th>
+    </tr>
+    </thead>
+
+    <tbody>
+    {% for item in data_list %}
+    <tr>
+        <td>
+            {{ item.id }}
+        </td>
+        <td>
+            {{ item.username }}
+        </td>
+        <td>
+            {{ item.password }}
+        </td>
+        <td>
+            {{ item.mobile }}
+        </td>
+    </tr>
+    {% endfor %}
+    </tbody>
+</table>
+</body>
+</html>

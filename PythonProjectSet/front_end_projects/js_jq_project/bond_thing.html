@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<ul>
+    <li>百度</li>
+    <li>阿里</li>
+    <li>搜狗</li>
+    <img src=""/>
+    <li>腾讯</li>
+</ul>
+
+<script src="./static/js/jquery37/jquery-3.7.1.js"></script>
+<script>
+    // 利用jQuery中的功能实现某些效果
+
+    $(
+        function () {
+            // 当页面框架加载完成后,自动执行
+        }
+    )
+
+    // 表示当点击这个标签时会自动执行这个函数
+    $("li").click(function(){
+        // $(this)  -> 表示当前你点击的哪个标签
+        $(this).remove()
+    },);
+</script>
+</body>
+</html>

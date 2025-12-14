@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Title</title>
+</head>
+<body>
+<ul>
+	<li>百度</li>
+	<li>谷歌</li>
+	<img src="./static/images/image01.jpg" alt="图片" style="height: 50%; width: 50%;"/>
+	<li>搜狗</li>
+</ul>
+<script src="./static/js/jquery-3.5.1/jquery-3.5.1/jquery-3.5.1.min.js"></script>
+<script>
+	// 特殊的格式，当页面框架加载完成之后，自动执行
+	$(function () {
+		$("li").click(function () {
+			// const text = $(this).text()  // 当前点击的是哪个标签
+			// console.log(text)
+			$(this).remove()
+		}); // 点击li标签的时候就执行function()函数
+	});
+
+</script>
+</body>
+</html>

@@ -1,0 +1,8 @@
+<?xml version='1.0' encoding='utf-8'?>
+<home>
+    <son name="son1">
+        <grandson1 name="grandson1"/>
+        <grandson2 name="grandson2"/>
+    </son>
+    <son name="son2"/>
+</home>

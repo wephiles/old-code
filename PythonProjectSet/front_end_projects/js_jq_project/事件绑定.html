@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>事件绑定</title>
+</head>
+<body>
+<input type="text" placeholder="请输入内容" id="txt"/>
+<input type="button" value="点击提交" onclick="my_func()"/>
+<ul id="city">
+
+</ul>
+
+<script type="text/javascript">
+    var city_list = ["beijing", "shanghai", "shenzhen", "wuhan", "guangzhou"];
+
+    function my_func() {
+        tag = document.getElementById("txt");
+        var text = tag.value
+
+        if ((text.length > 0) && (text !== " ")) {
+            // 添加文本
+            var tag_obj = document.createElement("li");
+
+            // 在li标签中写入内容
+            tag_obj.innerText = text;
+
+            // 添加到标签里面
+            var parent = document.getElementById("city");
+
+            parent.appendChild(tag_obj);
+            tag.value = "";
+        }else{
+            alert("输入为空,请重新输入.");
+        }
+    }
+</script>
+</body>
+</html>

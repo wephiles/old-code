@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<table border="1" style="border: 1px solid black;">
+    <thead>
+    <tr>
+        <th>ID</th>
+        <th>name</th>
+        <th>email</th>
+        <th>操作</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    <tr>
+        <td>1</td>
+        <td>xxx</td>
+        <td>xxx@123</td>
+        <td><input type="button" value="delete" class="delete"/></td>
+    </tr>
+
+    <tr>
+        <td>2</td>
+        <td>xxx</td>
+        <td>xxx@123</td>
+        <td><input type="button" value="delete" class="delete"/></td>
+    </tr>
+
+    <tr>
+        <td>3</td>
+        <td>xxx</td>
+        <td>xxx@123</td>
+        <td><input type="button" value="delete" class="delete"/></td>
+    </tr>
+
+    <tr>
+        <td>4</td>
+        <td>xxx</td>
+        <td>xxx@123</td>
+        <td><input type="button" value="delete" class="delete"/></td>
+    </tr>
+    </tbody>
+</table>
+
+<script src="./static/js/jquery37/jquery-3.7.1.js"></script>
+<script>
+    // 利用jQuery中的功能实现某些效果
+
+    $(
+        function () {
+            // 当页面框架加载完成后,自动执行
+            $(".delete").click(
+                function () {
+                    // 删除当前行的数据
+                    $(this).parent().parent().remove();
+                }
+            )
+        }
+    )
+</script>
+</body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>info_list</title>
+</head>
+<body>
+<h1>INFO LIST</h1>
+
+{#{{ n1 }}#}
+
+<table border="1">
+    <thead>
+    <tr>
+        <th>
+            id
+        </th>
+        <th>
+            name
+        </th>
+        <th>
+            password
+        </th>
+        <th>
+            age
+        </th>
+        <th>
+            操作
+        </th>
+    </tr>
+    </thead>
+    <tbody>
+    {% for item in data_list %}
+        <tr>
+            <td>
+                {{ item.id }}
+            </td>
+            <td>
+                {{ item.name }}
+            </td>
+            <td>
+                {{ item.password }}
+            </td>
+            <td>
+                {{ item.age }}
+            </td>
+            <td>
+                <a>编辑</a>
+                <a href="http://127.0.0.1:8000/info/del/?nid={{ item.id }}">删除</a>
+            </td>
+        </tr>
+    {% endfor %}
+    </tbody>
+</table>
+</body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>hover</title>
+	<style>
+		.c1 {
+			color: black;
+			font-size: 40px;
+		}
+		
+		.c1:hover {
+			color: #CC0000;
+			font-size: 50px;
+		}
+		
+		.c2 {
+			height: 300px;
+			width: 500px;
+			border: 2px solid black;
+		}
+		
+		.c2:hover {
+			border: 5px solid blue;
+		}
+		
+		.download{
+			display: None;
+		}
+		.app{
+			width: 310px;
+		}
+		.app:hover .download{
+			display: block;
+		}
+		.app:hover .title{
+			color: yellow;
+		}
+	</style>
+</head>
+<body>
+	<div class="c1">联通</div>
+	<div class="c2">电信</div>
+	<div class="c3">移动</div>
+
+	<div class="app">
+		<div class="title">点击下载APP</div>
+		<div class="download">
+			<img src="images/qrcode.png" alt="QRcode">
+		</div>
+	</div>
+</body>
+</html>

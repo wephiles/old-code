@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>index</title>
+    <style>
+        /*类选择器*/
+        .c1 {
+
+            color: red;
+        }
+
+        /*id选择器*/
+        #x1 {
+            color: cornflowerblue;
+        }
+
+        /*标签选择器*/
+        li {
+            color: pink;
+        }
+
+        /*属性选择器*/
+        input[type="text"] {
+            border: 2px solid blue;
+        }
+
+        .v1[xx="456"] {
+            color: gold;
+        }
+
+        /* 后代选择器 */
+        .yy li{
+            color: blue;
+        }
+        /* 会找到.yy下面的所有a标签 */
+        .yy a{
+            color: greenyellow;
+        }
+        /* 只会找.yy的儿子中的a标签 */
+        .yy > a{
+            color: indigo;
+        }
+    </style>
+</head>
+<body>
+<h1>欢迎光临!</h1>
+
+<div class="c1">aaa</div>
+<div id="x1">bbb</div>
+<div>ccc</div>
+<div class="v1" xx="123">xxx</div>
+<div class="v1" xx="456">yyy</div>
+<div class="v1" xx="999">zzz</div>
+
+<ul>
+    <li>a</li>
+    <li>b</li>
+    <li>c</li>
+</ul>
+
+<div class="yy">
+    <a>computer</a>
+    <div>
+        <a>Google</a>
+    </div>
+    <ul>
+        <li>001</li>
+        <li>002</li>
+        <li>003</li>
+    </ul>
+</div>
+
+<ol>
+    <li>x</li>
+    <li>y</li>
+    <li>z</li>
+</ol>
+username: <input type="text"/>
+password: <input type="password"/>
+
+</body>
+</html>

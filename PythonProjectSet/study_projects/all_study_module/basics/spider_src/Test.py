@@ -1,0 +1,78 @@
+# -*- coding: utf-8 -*-
+# @CreateTime : 2021/12/3 20:28
+# @Author : 20866
+# @Site : 
+# @Project: 爬虫学习-哔哩哔哩
+# @File : send_email.py
+# @Software : PyCharm
+
+# from lxml import etree
+
+
+# def main():
+    # word = 'To be or not to be , that is a question!'
+    # set_in = ('a', 'b', 'c')
+    # x = ''.join(set_in)
+    # print(word)
+    # print(x)
+    # y = ''.join(('Hello ', 'World!'))
+    # print(y)
+    # parser = etree.HTMLParser(encoding="utf-8")
+    # tree = etree.parse('test_1.html', parser=parser)  # 实例化好一个etree对象且将被解析的源码加载到该对象中去
+    # 标签定位
+    # response = tree.xpath('/html/head/title')
+    # print(type(response))
+    # response_1 = tree.xpath('//div[@class="first"]')
+    # response_1 = tree.xpath('//div[@class="first"]/p[3]')  # 注意此处p[3]这个索引是从1开始的，不是从0开始的！！！
+    # print(response_1)
+    # response = tree.xpath('//div[@class="first"]//li[5]/a/text()')  # ['第五']
+    # print(response)
+    # string_get = response[0]
+    # print(string_get)
+    # response = tree.xpath('//li[11]//text()')
+    # list_text = []
+    # response = tree.xpath('//div[@class="first"]//text()')
+    # for items in response:
+    #     items.replace('\r', '').replace(' ', '').replace('\r', '').replace('\r\n', '')
+    #     list_text.append(items)
+    # print(items)
+    # print(response)
+    # print(list_text)
+    # response = tree.xpath('//div[@class="first"]/img/@src')[0]
+    # print(response)
+    # string = 'ell'
+    # x = string.join('ho')
+    # print(x)
+    # s1 = '-'
+    # s2 = '_'
+    # s3 = ''
+    # string = ['h', 'e', 'l', 'l', 'o']
+    # print(s1.join(string))
+    # print(s2.join(string))
+    # print(s3.join(string))
+
+
+# class telephone_notebook:
+#     def __init__(self, data_string):
+#         self.data_string = '2021.01.06 23:58'
+# import keyword
+#
+#
+# if __name__ == '__main__':
+#     print(keyword.kwlist)
+#     print(abs(-10))
+#     a_list = ['https://pic.netbian.com/uploads/allimg/210922/191729-16323094499dcf.jpg', 'https://pic.netbian.com/uploads/allimg/210827/235918-1630079958392e.jpg', 'https://pic.netbian.com/uploads/allimg/211227/001731-1640535451110c.jpg', 'https://pic.netbian.com/uploads/allimg/211224/231012-1640358612c6c1.jpg', 'https://pic.netbian.com/uploads/allimg/211115/232008-1636989608a652.jpg', 'https://pic.netbian.com/uploads/allimg/211227/235250-16406203705a57.jpg', 'https://pic.netbian.com/uploads/allimg/211229/002141-1640708501011b.jpg', 'https://pic.netbian.com/uploads/allimg/190518/174718-15581728388724.jpg', 'https://pic.netbian.com/uploads/allimg/211221/225057-1640098257f079.jpg', 'https://pic.netbian.com/uploads/allimg/211220/222313-16400101936a11.jpg', 'https://pic.netbian.com/uploads/allimg/211220/221921-164000996194ea.jpg', 'https://pic.netbian.com/uploads/allimg/211122/000739-16375108599425.jpg', 'https://pic.netbian.com/uploads/allimg/211117/001857-1637079537c0f0.jpg', 'https://pic.netbian.com/uploads/allimg/211221/235752-16401022728598.jpg', 'https://pic.netbian.com/uploads/allimg/211221/225736-16400986564a89.jpg', 'https://pic.netbian.com/uploads/allimg/211221/225259-164009837988ff.jpg', 'https://pic.netbian.com/uploads/allimg/211230/225013-1640875813f02c.jpg', 'https://pic.netbian.com/uploads/allimg/211220/221608-16400097680323.jpg', 'https://pic.netbian.com/uploads/allimg/211219/114237-1639885357957d.jpg', 'https://pic.netbian.com/uploads/allimg/211212/223522-16393197223935.jpg', 'https://pic.netbian.com/uploads/allimg/211122/001046-1637511046f20d.jpg', 'https://pic.netbian.com/uploads/allimg/211213/233000-1639409400d244.jpg', 'https://pic.netbian.com/uploads/allimg/211212/223131-163931949132db.jpg', 'https://pic.netbian.com/uploads/allimg/211210/000702-1639066022d8f1.jpg', 'https://pic.netbian.com/uploads/allimg/211230/001527-164079452730c8.jpg', 'https://pic.netbian.com/uploads/allimg/211118/002227-16371661476d85.jpg', 'https://pic.netbian.com/uploads/allimg/211208/000729-1638893249d63c.jpg', 'https://pic.netbian.com/uploads/allimg/211208/000116-163889287674e6.jpg', 'https://pic.netbian.com/uploads/allimg/211207/235910-163889275029fb.jpg', 'https://pic.netbian.com/uploads/allimg/211207/234739-1638892059a15d.jpg', 'https://pic.netbian.com/uploads/allimg/211206/221617-1638800177887e.jpg', 'https://pic.netbian.com/uploads/allimg/211204/000904-1638547744d312.jpg', 'https://pic.netbian.com/uploads/allimg/211204/000638-16385475980dfe.jpg', 'https://pic.netbian.com/uploads/allimg/211204/000529-16385475292457.jpg', 'https://pic.netbian.com/uploads/allimg/211119/004210-163725373097c0.jpg', 'https://pic.netbian.com/uploads/allimg/211202/170427-16384358679d68.jpg', 'https://pic.netbian.com/uploads/allimg/211202/170117-163843567762b2.jpg', 'https://pic.netbian.com/uploads/allimg/211202/170018-1638435618449d.jpg', 'https://pic.netbian.com/uploads/allimg/211201/003953-16382903938a85.jpg', 'https://pic.netbian.com/uploads/allimg/211201/003728-163829024819d7.jpg', 'https://pic.netbian.com/uploads/allimg/211201/003352-1638290032bf9d.jpg', 'https://pic.netbian.com/uploads/allimg/211201/003045-16382898450063.jpg', 'https://pic.netbian.com/uploads/allimg/211201/002931-1638289771e806.jpg', 'https://pic.netbian.com/uploads/allimg/211130/002232-1638202952cb3c.jpg', 'https://pic.netbian.com/uploads/allimg/211127/001033-16379430336ca0.jpg', 'https://pic.netbian.com/uploads/allimg/211124/003353-1637685233bf49.jpg', 'https://pic.netbian.com/uploads/allimg/211125/002326-163777100630af.jpg', 'https://pic.netbian.com/uploads/allimg/211125/002503-1637771103fd08.jpg', 'https://pic.netbian.com/uploads/allimg/211117/001226-16370791469ff9.jpg', 'https://pic.netbian.com/uploads/allimg/211117/001617-1637079377c3f2.jpg', 'https://pic.netbian.com/uploads/allimg/211119/004032-16372536324f48.jpg', 'https://pic.netbian.com/uploads/allimg/211119/003505-1637253305bf39.jpg', 'https://pic.netbian.com/uploads/allimg/211119/003357-1637253237fcca.jpg', 'https://pic.netbian.com/uploads/allimg/211117/001332-1637079212db39.jpg', 'https://pic.netbian.com/uploads/allimg/211117/001037-16370790374cbd.jpg', 'https://pic.netbian.com/uploads/allimg/211112/234644-16367320047f14.jpg', 'https://pic.netbian.com/uploads/allimg/211112/233925-16367315659e27.jpg', 'https://pic.netbian.com/uploads/allimg/211111/001035-1636560635cda7.jpg', 'https://pic.netbian.com/uploads/allimg/211111/000342-1636560222783a.jpg', 'https://pic.netbian.com/uploads/allimg/211110/234232-16365589525329.jpg', 'https://pic.netbian.com/uploads/allimg/211110/234053-1636558853ca43.jpg', 'https://pic.netbian.com/uploads/allimg/211109/223232-163646835292ee.jpg', 'https://pic.netbian.com/uploads/allimg/210718/001826-16265387066216.jpg', 'https://pic.netbian.com/uploads/allimg/211109/223015-163646821573d6.jpg', 'https://pic.netbian.com/uploads/allimg/211107/164123-163627448385c6.jpg', 'https://pic.netbian.com/uploads/allimg/211106/000451-1636128291f5e0.jpg', 'https://pic.netbian.com/uploads/allimg/211106/000354-16361282344ca7.jpg', 'https://pic.netbian.com/uploads/allimg/211105/194627-16361127875410.jpg', 'https://pic.netbian.com/uploads/allimg/211029/123354-16354820347c53.jpg', 'https://pic.netbian.com/uploads/allimg/211029/115213-163547953392a6.jpg', 'https://pic.netbian.com/uploads/allimg/211029/115025-1635479425f048.jpg', 'https://pic.netbian.com/uploads/allimg/211029/113624-1635478584e93c.jpg', 'https://pic.netbian.com/uploads/allimg/211025/105543-1635130543b705.jpg', 'https://pic.netbian.com/uploads/allimg/211027/004850-1635266930e08a.jpg', 'https://pic.netbian.com/uploads/allimg/210907/225500-1631026500f768.jpg', 'https://pic.netbian.com/uploads/allimg/211026/220616-163525717660ea.jpg', 'https://pic.netbian.com/uploads/allimg/211023/233434-1635003274d157.jpg', 'https://pic.netbian.com/uploads/allimg/211023/232234-1635002554c590.jpg', 'https://pic.netbian.com/uploads/allimg/211020/235327-16347452070c83.jpg', 'https://pic.netbian.com/uploads/allimg/211020/235237-1634745157220b.jpg', 'https://pic.netbian.com/uploads/allimg/211011/225749-16339642694e48.jpg', 'https://pic.netbian.com/uploads/allimg/210922/191502-1632309302364a.jpg', 'https://pic.netbian.com/uploads/allimg/211020/234604-16347447644b2f.jpg', 'https://pic.netbian.com/uploads/allimg/211119/003243-1637253163d15b.jpg', 'https://pic.netbian.com/uploads/allimg/211119/002937-1637252977ae35.jpg', 'https://pic.netbian.com/uploads/allimg/211017/235730-1634486250a1c1.jpg', 'https://pic.netbian.com/uploads/allimg/211012/221328-1634048008ef58.jpg', 'https://pic.netbian.com/uploads/allimg/211012/221025-1634047825629f.jpg', 'https://pic.netbian.com/uploads/allimg/211012/214819-1634046499b22c.jpg', 'https://pic.netbian.com/uploads/allimg/211008/223009-1633703409a9e7.jpg', 'https://pic.netbian.com/uploads/allimg/211008/221917-163370275734f7.jpg', 'https://pic.netbian.com/uploads/allimg/211005/204909-1633438149324e.jpg', 'https://pic.netbian.com/uploads/allimg/210922/191621-16323093812c21.jpg', 'https://pic.netbian.com/uploads/allimg/210927/231109-16327554693a82.jpg', 'https://pic.netbian.com/uploads/allimg/210907/224946-1631026186e15a.jpg', 'https://pic.netbian.com/uploads/allimg/211005/231932-1633447172a06d.jpg', 'https://pic.netbian.com/uploads/allimg/211014/230417-163422385786ca.jpg', 'https://pic.netbian.com/uploads/allimg/211014/230334-1634223814e0cb.jpg', 'https://pic.netbian.com/uploads/allimg/210925/233922-1632584362562d.jpg', 'https://pic.netbian.com/uploads/allimg/211008/230920-1633705760ac8a.jpg', 'https://pic.netbian.com/uploads/allimg/211008/222337-16337030179599.jpg', 'https://pic.netbian.com/uploads/allimg/210927/230956-1632755396cdef.jpg', 'https://pic.netbian.com/uploads/allimg/210817/235554-162921575410ce.jpg', 'https://pic.netbian.com/uploads/allimg/210925/233224-1632583944abd7.jpg', 'https://pic.netbian.com/uploads/allimg/210922/191954-16323095940e9b.jpg', 'https://pic.netbian.com/uploads/allimg/210920/180538-1632132338b0a0.jpg', 'https://pic.netbian.com/uploads/allimg/210922/192127-1632309687516c.jpg', 'https://pic.netbian.com/uploads/allimg/210920/180354-16321322346107.jpg', 'https://pic.netbian.com/uploads/allimg/210916/233155-16318063151ef8.jpg', 'https://pic.netbian.com/uploads/allimg/210916/232907-1631806147c3f7.jpg', 'https://pic.netbian.com/uploads/allimg/210916/232749-1631806069dc24.jpg', 'https://pic.netbian.com/uploads/allimg/210916/232432-1631805872339a.jpg', 'https://pic.netbian.com/uploads/allimg/210913/233124-16315470844b0d.jpg', 'https://pic.netbian.com/uploads/allimg/210912/225058-1631458258bee3.jpg', 'https://pic.netbian.com/uploads/allimg/210907/230732-1631027252b218.jpg', 'https://pic.netbian.com/uploads/allimg/210907/230604-1631027164ed40.jpg', 'https://pic.netbian.com/uploads/allimg/210905/224417-163085305780f7.jpg', 'https://pic.netbian.com/uploads/allimg/210902/163345-1630571625eff7.jpg', 'https://pic.netbian.com/uploads/allimg/210819/221652-16293826128c14.jpg', 'https://pic.netbian.com/uploads/allimg/210902/163705-16305718253414.jpg', 'https://pic.netbian.com/uploads/allimg/210831/101932-16303763721dc9.jpg', 'https://pic.netbian.com/uploads/allimg/210829/234415-163025185539be.jpg', 'https://pic.netbian.com/uploads/allimg/210828/000334-16300802147494.jpg', 'https://pic.netbian.com/uploads/allimg/210828/000206-16300801263cc3.jpg', 'https://pic.netbian.com/uploads/allimg/210812/224423-16287794633857.jpg', 'https://pic.netbian.com/uploads/allimg/210825/000540-162982114090a1.jpg', 'https://pic.netbian.com/uploads/allimg/210824/234450-162981989096c2.jpg', 'https://pic.netbian.com/uploads/allimg/210824/234146-162981970664a5.jpg', 'https://pic.netbian.com/uploads/allimg/210824/234005-162981960550da.jpg', 'https://pic.netbian.com/uploads/allimg/210922/231100-1632323460a76e.jpg', 'https://pic.netbian.com/uploads/allimg/210819/233639-1629387399a424.jpg', 'https://pic.netbian.com/uploads/allimg/210819/234325-162938780566dd.jpg', 'https://pic.netbian.com/uploads/allimg/210815/233459-16290416994668.jpg', 'https://pic.netbian.com/uploads/allimg/210718/001714-162653863412dd.jpg', 'https://pic.netbian.com/uploads/allimg/210818/000310-16292161905b9e.jpg', 'https://pic.netbian.com/uploads/allimg/210816/234129-162912848931ba.jpg', 'https://pic.netbian.com/uploads/allimg/210812/230003-1628780403b213.jpg', 'https://pic.netbian.com/uploads/allimg/210812/225733-16287802533d30.jpg', 'https://pic.netbian.com/uploads/allimg/210812/230550-16287807502647.jpg', 'https://pic.netbian.com/uploads/allimg/210809/231914-16285223542ca7.jpg', 'https://pic.netbian.com/uploads/allimg/210809/231548-16285221488414.jpg', 'https://pic.netbian.com/uploads/allimg/210804/231238-1628089958c500.jpg', 'https://pic.netbian.com/uploads/allimg/210804/230702-16280896220fad.jpg', 'https://pic.netbian.com/uploads/allimg/210802/010414-16278374544e01.jpg', 'https://pic.netbian.com/uploads/allimg/210730/225539-1627656939bceb.jpg', 'https://pic.netbian.com/uploads/allimg/210727/223524-1627396524fb11.jpg', 'https://pic.netbian.com/uploads/allimg/210721/003605-1626798965d643.jpg', 'https://pic.netbian.com/uploads/allimg/210718/000805-16265380858e92.jpg', 'https://pic.netbian.com/uploads/allimg/210630/202525-16250559250b5e.jpg', 'https://pic.netbian.com/uploads/allimg/210723/213914-1627047554c91d.jpg', 'https://pic.netbian.com/uploads/allimg/210703/182448-162530788875cf.jpg', 'https://pic.netbian.com/uploads/allimg/210703/185457-1625309697abba.jpg', 'https://pic.netbian.com/uploads/allimg/210719/233521-1626708921ec27.jpg', 'https://pic.netbian.com/uploads/allimg/210719/233252-16267087725a5d.jpg', 'https://pic.netbian.com/uploads/allimg/210718/001601-1626538561e9d7.jpg', 'https://pic.netbian.com/uploads/allimg/210712/205911-16260947510d15.jpg', 'https://pic.netbian.com/uploads/allimg/210712/191742-1626088662d30a.jpg', 'https://pic.netbian.com/uploads/allimg/210712/203021-1626093021629b.jpg', 'https://pic.netbian.com/uploads/allimg/210708/200350-1625745830feae.jpg', 'https://pic.netbian.com/uploads/allimg/210706/005422-1625504062cdbd.jpg', 'https://pic.netbian.com/uploads/allimg/210628/001603-1624810563292c.jpg', 'https://pic.netbian.com/uploads/allimg/210627/000355-1624723435db7b.jpg', 'https://pic.netbian.com/uploads/allimg/210627/000026-16247232260fdb.jpg', 'https://pic.netbian.com/uploads/allimg/210617/193729-1623929849e23d.jpg', 'https://pic.netbian.com/uploads/allimg/210425/215427-16193588673f9d.jpg', 'https://pic.netbian.com/uploads/allimg/210627/000200-16247233206d9c.jpg', 'https://pic.netbian.com/uploads/allimg/210623/224000-1624459200403d.jpg', 'https://pic.netbian.com/uploads/allimg/210621/225550-162428735089a5.jpg', 'https://pic.netbian.com/uploads/allimg/210621/225451-16242872911410.jpg', 'https://pic.netbian.com/uploads/allimg/210617/192303-1623928983aedb.jpg', 'https://pic.netbian.com/uploads/allimg/210508/152327-16204586078720.jpg', 'https://pic.netbian.com/uploads/allimg/210617/193149-16239295098fb3.jpg', 'https://pic.netbian.com/uploads/allimg/210617/192555-1623929155c29b.jpg', 'https://pic.netbian.com/uploads/allimg/210612/231543-1623510943270b.jpg', 'https://pic.netbian.com/uploads/allimg/200121/230803-1579619283a6c1.jpg', 'https://pic.netbian.com/uploads/allimg/210517/202925-1621254565c2b9.jpg', 'https://pic.netbian.com/uploads/allimg/210612/224751-1623509271b080.jpg', 'https://pic.netbian.com/uploads/allimg/210612/214437-162350547730e5.jpg', 'https://pic.netbian.com/uploads/allimg/210613/223653-1623595013bde9.jpg', 'https://pic.netbian.com/uploads/allimg/210608/232824-1623166104bd90.jpg']
+#     print(len(a_list))
+#     pass
+list_ = ['author1', 'author2', 'author3']
+name_ = ['name1', 'name2', 'name_3']
+dic_ = {}
+list_all = []
+for items in range(0, 3):
+    dic_ = {
+        'author': list_[items],
+        'name': name_[items]
+    }
+    list_all.append(dic_)
+print(list_all)
+pass

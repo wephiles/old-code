@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>变量</title>
+</head>
+<body>
+<span id="text">欢迎光临</span>
+
+<script type="text/javascript">
+	function show() {
+		// 去html中找到某个标签并且获取他的内容 DOM
+		var tag = document.getElementById("text");
+		var dataString = tag.innerText;
+		console.log(dataString);
+		// 动态起来 把文本第一个字符放到最后面
+		var firstChar = dataString[0];
+		var otherString = dataString.substring(1, dataString.length);
+		var newText = otherString + firstChar;
+		console.log(newText);
+		// 在html中更新内容
+		tag.innerText = newText;
+	}
+	// DOM 中定时器 如，每一秒执行一次show函数
+	setInterval(show, 1000);
+</script>
+</body>
+</html>

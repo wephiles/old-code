@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>数组</title>
+</head>
+<body>
+<ul id="city">
+	<!--
+	<li>北京</li>
+	<li>上海</li>
+	<li>深圳</li>
+	<li>广州</li>
+	-->
+</ul>
+
+<script type="text/javascript">
+	// 发送网络请求，可以获取数据，保存在数组中
+	var cityList = ["北京", "上海", "深圳", "广州"] ;
+	for (var index in cityList) {
+		var text = cityList[index] ;
+		// 文本添加到标签里面： DOM的功能
+		
+		// 创建<li>标签
+		var tag = document.createElement("li") ;
+		// 在li标签中写入内容
+		tag.innerText = text ;
+		// 添加到id = "city"标签里面 DOM
+		var parentTag = document.getElementById("city") ;
+		parentTag.appendChild(tag) ;
+	}
+</script>
+</body>
+</html>

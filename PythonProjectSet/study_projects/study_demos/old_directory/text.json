@@ -1,0 +1,83 @@
+{
+  "words_result_num": 46,
+  "words_result": {
+    "InvoiceNumDigit": "",
+    "CommodityUnit": [],
+    "PurchaserAddress": "",
+    "SheetNum": "",
+    "CommodityType": [],
+    "TotalAmount": "185.93",
+    "Checker": "陈焕生",
+    "PurchaserBank": "",
+    "Agent": "否",
+    "Password": "0-57*+2/6<08-3534>9-9695>1-595++518-68+-97<19>67*19<*/01907>5<>>-88105-3166<839095<973-7-<94++74<+06*15-4<45",
+    "InvoiceTypeOrg": "浙江增值税电子普通发票",
+    "InvoiceCodeConfirm": "033002000111",
+    "TotalTax": "0.07",
+    "ServiceType": "服务",
+    "CommodityTaxRate": [
+      {
+        "row": "1",
+        "word": "***"
+      }
+    ],
+    "CommodityTax": [
+      {
+        "row": "1",
+        "word": "0.07"
+      }
+    ],
+    "SellerBank": "上海浦东发展银行杭州高新支行95130154800003964",
+    "Remarks": "差额征税:184.51。",
+    "SellerAddress": "杭州市江干区钱潮路369号智谷人才广场8楼0571-87233885",
+    "NoteDrawer": "刘荣佑",
+    "InvoiceTag": "其他",
+    "InvoiceNumConfirm": "74172194",
+    "OnlinePay": "",
+    "Payee": "俞兰",
+    "CommodityName": [
+      {
+        "row": "1",
+        "word": "*人力资源服务*劳务费-代驾"
+      }
+    ],
+    "CommodityVehicleType": [],
+    "InvoiceCode": "033002000111",
+    "AmountInWords": "壹佰捌拾陆圆整",
+    "AmountInFiguers": "186.00",
+    "City": "",
+    "InvoiceType": "电子普通发票",
+    "CommodityEndDate": [],
+    "PurchaserName": "上海艺赛旗软件股份有限公司",
+    "InvoiceDate": "2020年06月12日",
+    "CommodityNum": [
+      {
+        "row": "1",
+        "word": "1"
+      }
+    ],
+    "PurchaserRegisterNum": "91310105572715984J",
+    "MachineCode": "661620034630",
+    "CommodityPlateNum": [],
+    "CheckCode": "79585562461837809249",
+    "SellerRegisterNum": "91330100552660066F",
+    "CommodityPrice": [
+      {
+        "row": "1",
+        "word": "185.93"
+      }
+    ],
+    "CommodityStartDate": [],
+    "SellerName": "浙江外企德科人力资源服务有限公司",
+    "CommodityAmount": [
+      {
+        "row": "1",
+        "word": "185.93"
+      }
+    ],
+    "Province": "浙江省",
+    "InvoiceNum": "74172194"
+  },
+  "pdf_file_size": 1,
+  "log_id": 1805615712212340114
+}

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>输入内容</title>
+</head>
+<body>
+
+<label for="txtUser"></label><input type="text" id="txtUser" placeholder="user name"/>
+<label for="txtEmail"></label><input type="text" id="txtEmail" placeholder="Email"/>
+<input type="button" value="提交" onclick="getInfo()"/>
+<ul id="view">
+</ul>
+<script src="./static/js/jquery-3.5.1/jquery-3.5.1/jquery-3.5.1.min.js"></script>
+
+<script>
+	function getInfo() {
+		// 获取用户名和邮箱
+		const name = $("#txtUser").val();
+		const email = $("#txtEmail").val();
+		const dataString = name + " - " + email
+		const newLi = $("<li>").text(dataString)
+		$("#view").append(newLi)
+	}
+</script>
+</body>
+</html>

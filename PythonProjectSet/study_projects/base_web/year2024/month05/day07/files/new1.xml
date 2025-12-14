@@ -1,0 +1,8 @@
+<library>
+    <book id="1002">
+        <title>Learning XML</title>
+        <author>Jane Smith</author>
+        <year>2022</year>
+        <neighbor name="b" />
+    </book>
+</library>

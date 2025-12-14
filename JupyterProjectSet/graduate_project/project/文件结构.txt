@@ -1,0 +1,32 @@
+文件结构
+---------------------------------
+Directory:GraduateProject/project
+    files:
+    - Knn.ipynb                    ------ KNN算法
+    - NaiveBayes.ipynb             ------ 朴素贝叶斯算法
+    - LDA.ipynb                    ------ LDA主题模型
+    - LDA_Single.ipynb             ------ 某一门课程的LDA主题分析模型
+    - SaveComment.ipynb            ------ 爬虫、保存爬虫数据到csv，txt文件中
+    - WordCloud.ipynb              ------ 制作词云图
+    - TfIdf.ipynb                  ------ TF-IDF
+    - BilibiliLDA.ipynb            ------ 从B站up主‘五连单排一班’视频评论中下载的文件，有改动
+    - downloadtfidf.ipynb          ------ 从B站up主‘五连单排一班’视频评论中下载的文件，有改动
+    - LDA model application.ipynb  ------ 来自于gitee用户的源码，有改动。https://gitee.com/kkkcuiya/examples-of-lda-model-application
+    - LDACopy.ipynb                ------ LDA备份文件
+    - LDAsklearn_origin.ipynb      ------ 从B站up主‘五连单排一班’视频评论中下载的文件，有改动
+    - Test.ipynb                   ------ 测试文件
+    - solution_class.py            ------ 爬虫类，包括爬取评论、课程名称、学校名称等
+    - 文件结构.txt                 ------ 说明文件结构，本文件
+    
+    
+项目实现的功能：
+    1 爬取操作系统5337条数据+数据结构13308条数据共计18645条数据 OK
+    2 进行数据预处理，包括去重和去除空值和去除无关项，得到9821条评论 OK
+    3 从处理完的9000多条数据中选取操作系统3000条+数据结构3000条数据，共计6000条数据作为训练 得出训练模型，训练准确率为98% 测试准确率为91%
+      其中训练集：测试集=8:2 OK
+    4 从剩余的操作系统1181条，数据结构2640条数据做测试，作为待分析的样本，做完分析发现取得了较好的效果。 OK
+    5 从网上爬取某一门课程的所有评论（例如苏州大学的操作系统课程评论和南京邮电大学的操作系统课程评论）并进行简单的预处理 OK
+    6 利用KNN将5获得的数据进行分析，分析完成后分成正向和负向语料——以苏州大学操作系统课程和南京邮电大学操作系统课程为例 OK
+    7 利用tf-idf和LDA进行分析。
+    8 此外，还可以对爬取到的所有的评论数据进行分析，得到一个较为全局的概况。OK
+    9 另外，可以对爬取到的课程评论做分词、去停用词处理后制作词云图。OK

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="text" id="txtUser" placeholder="name"/>
+<input type="text" id="txtEmail" placeholder="email"/>
+<input type="button" value="提 交" onclick="get_info()"/>
+
+<ul id="view">
+</ul>
+
+<script src="./static/js/jquery37/jquery-3.7.1.js"></script>
+<script>
+    // 利用jQuery中的功能实现某些效果
+
+    function get_info() {
+        // 获取用户输入的用户名和密码
+        var name = $("#txtUser").val();
+        var email = $("#txtEmail").val();
+
+        add_str = name + "-" + email
+
+        // 创建li标签并在里面写入内容
+        var new_li = $("<li>").text(add_str)
+
+        // 放进ul标签里面
+        $("#view").append(new_li)
+    }
+</script>
+</body>
+</html>

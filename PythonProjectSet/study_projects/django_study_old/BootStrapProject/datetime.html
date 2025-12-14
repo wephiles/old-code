@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>选中日期</title>
+	<link rel="stylesheet" href="./static/plugins/bootstrap-3.4.1/css/bootstrap.css">
+	<link rel="stylesheet" href="./static/plugins/font-awesome/font-awesome-4.7.0/css/font-awesome.css">
+	<link rel="stylesheet" href="./static/plugins/bootstrap-datepicker-1.6.4-dist/css/bootstrap-datepicker.min.css">
+	<style>
+		.container {
+			margin-top: 20px;
+			width: 500px;
+		}
+	</style>
+</head>
+<body>
+<div class="datepicker datepicker-inline">
+	<div class="datepicker-days" style="">
+		<table class="table-condensed">
+			<thead>
+			<tr>
+				<th colspan="7" class="datepicker-title" style="display: none;"></th>
+			</tr>
+			<tr>
+				<th class="prev">«</th>
+				<th colspan="5" class="datepicker-switch">May 2023</th>
+				<th class="next">»</th>
+			</tr>
+			<tr>
+				<th class="dow">Su</th>
+				<th class="dow">Mo</th>
+				<th class="dow">Tu</th>
+				<th class="dow">We</th>
+				<th class="dow">Th</th>
+				<th class="dow">Fr</th>
+				<th class="dow">Sa</th>
+			</tr>
+			</thead>
+			<tbody>
+			<tr>
+				<td class="old day" data-date="1682812800000">30</td>
+				<td class="today day" data-date="1682899200000">1</td>
+				<td class="day" data-date="1682985600000">2</td>
+				<td class="active day" data-date="1683072000000">3</td>
+				<td class="day" data-date="1683158400000">4</td>
+				<td class="day" data-date="1683244800000">5</td>
+				<td class="day" data-date="1683331200000">6</td>
+			</tr>
+			<tr>
+				<td class="day" data-date="1683417600000">7</td>
+				<td class="day" data-date="1683504000000">8</td>
+				<td class="day" data-date="1683590400000">9</td>
+				<td class="day" data-date="1683676800000">10</td>
+				<td class="day" data-date="1683763200000">11</td>
+				<td class="day" data-date="1683849600000">12</td>
+				<td class="day" data-date="1683936000000">13</td>
+			</tr>
+			<tr>
+				<td class="day" data-date="1684022400000">14</td>
+				<td class="day" data-date="1684108800000">15</td>
+				<td class="day" data-date="1684195200000">16</td>
+				<td class="day" data-date="1684281600000">17</td>
+				<td class="day" data-date="1684368000000">18</td>
+				<td class="day" data-date="1684454400000">19</td>
+				<td class="day" data-date="1684540800000">20</td>
+			</tr>
+			<tr>
+				<td class="day" data-date="1684627200000">21</td>
+				<td class="day" data-date="1684713600000">22</td>
+				<td class="day" data-date="1684800000000">23</td>
+				<td class="day" data-date="1684886400000">24</td>
+				<td class="day" data-date="1684972800000">25</td>
+				<td class="day" data-date="1685059200000">26</td>
+				<td class="day" data-date="1685145600000">27</td>
+			</tr>
+			<tr>
+				<td class="day" data-date="1685232000000">28</td>
+				<td class="day" data-date="1685318400000">29</td>
+				<td class="day" data-date="1685404800000">30</td>
+				<td class="day" data-date="1685491200000">31</td>
+				<td class="new day" data-date="1685577600000">1</td>
+				<td class="new day" data-date="1685664000000">2</td>
+				<td class="new day" data-date="1685750400000">3</td>
+			</tr>
+			<tr>
+				<td class="new day" data-date="1685836800000">4</td>
+				<td class="new day" data-date="1685923200000">5</td>
+				<td class="new day" data-date="1686009600000">6</td>
+				<td class="new day" data-date="1686096000000">7</td>
+				<td class="new day" data-date="1686182400000">8</td>
+				<td class="new day" data-date="1686268800000">9</td>
+				<td class="new day" data-date="1686355200000">10</td>
+			</tr>
+			</tbody>
+			<tfoot>
+			<tr>
+				<th colspan="7" class="today" style="display: none;">Today</th>
+			</tr>
+			<tr>
+				<th colspan="7" class="clear" style="display: none;">Clear</th>
+			</tr>
+			</tfoot>
+		</table>
+	</div>
+	<div class="datepicker-months" style="display: none;">
+		<table class="table-condensed">
+			<thead>
+			<tr>
+				<th colspan="7" class="datepicker-title" style="display: none;"></th>
+			</tr>
+			<tr>
+				<th class="prev">«</th>
+				<th colspan="5" class="datepicker-switch">2023</th>
+				<th class="next">»</th>
+			</tr>
+			</thead>
+			<tbody>
+			<tr>
+				<td colspan="7"><span class="month">Jan</span><span class="month">Feb</span><span
+						class="month">Mar</span><span class="month">Apr</span><span
+						class="month focused active">May</span><span class="month">Jun</span><span
+						class="month">Jul</span><span class="month">Aug</span><span class="month">Sep</span><span
+						class="month">Oct</span><span class="month">Nov</span><span class="month">Dec</span></td>
+			</tr>
+			</tbody>
+			<tfoot>
+			<tr>
+				<th colspan="7" class="today" style="display: none;">Today</th>
+			</tr>
+			<tr>
+				<th colspan="7" class="clear" style="display: none;">Clear</th>
+			</tr>
+			</tfoot>
+		</table>
+	</div>
+	<div class="datepicker-years" style="display: none;">
+		<table class="table-condensed">
+			<thead>
+			<tr>
+				<th colspan="7" class="datepicker-title" style="display: none;"></th>
+			</tr>
+			<tr>
+				<th class="prev">«</th>
+				<th colspan="5" class="datepicker-switch">2020-2029</th>
+				<th class="next">»</th>
+			</tr>
+			</thead>
+			<tbody>
+			<tr>
+				<td colspan="7"><span class="year old">2019</span><span class="year">2020</span><span
+						class="year">2021</span><span class="year">2022</span><span
+						class="year active focused">2023</span><span class="year">2024</span><span
+						class="year">2025</span><span class="year">2026</span><span class="year">2027</span><span
+						class="year">2028</span><span class="year">2029</span><span class="year new">2030</span></td>
+			</tr>
+			</tbody>
+			<tfoot>
+			<tr>
+				<th colspan="7" class="today" style="display: none;">Today</th>
+			</tr>
+			<tr>
+				<th colspan="7" class="clear" style="display: none;">Clear</th>
+			</tr>
+			</tfoot>
+		</table>
+	</div>
+	<div class="datepicker-decades" style="display: none;">
+		<table class="table-condensed">
+			<thead>
+			<tr>
+				<th colspan="7" class="datepicker-title" style="display: none;"></th>
+			</tr>
+			<tr>
+				<th class="prev">«</th>
+				<th colspan="5" class="datepicker-switch">2000-2090</th>
+				<th class="next">»</th>
+			</tr>
+			</thead>
+			<tbody>
+			<tr>
+				<td colspan="7"><span class="decade old">1990</span><span class="decade">2000</span><span
+						class="decade">2010</span><span class="decade active focused">2020</span><span class="decade">2030</span><span
+						class="decade">2040</span><span class="decade">2050</span><span class="decade">2060</span><span
+						class="decade">2070</span><span class="decade">2080</span><span class="decade">2090</span><span
+						class="decade new">2100</span></td>
+			</tr>
+			</tbody>
+			<tfoot>
+			<tr>
+				<th colspan="7" class="today" style="display: none;">Today</th>
+			</tr>
+			<tr>
+				<th colspan="7" class="clear" style="display: none;">Clear</th>
+			</tr>
+			</tfoot>
+		</table>
+	</div>
+	<div class="datepicker-centuries" style="display: none;">
+		<table class="table-condensed">
+			<thead>
+			<tr>
+				<th colspan="7" class="datepicker-title" style="display: none;"></th>
+			</tr>
+			<tr>
+				<th class="prev">«</th>
+				<th colspan="5" class="datepicker-switch">2000-2900</th>
+				<th class="next">»</th>
+			</tr>
+			</thead>
+			<tbody>
+			<tr>
+				<td colspan="7"><span class="century old">1900</span><span
+						class="century active focused">2000</span><span class="century">2100</span><span
+						class="century">2200</span><span class="century">2300</span><span
+						class="century">2400</span><span class="century">2500</span><span
+						class="century">2600</span><span class="century">2700</span><span
+						class="century">2800</span><span class="century">2900</span><span
+						class="century new">3000</span></td>
+			</tr>
+			</tbody>
+			<tfoot>
+			<tr>
+				<th colspan="7" class="today" style="display: none;">Today</th>
+			</tr>
+			<tr>
+				<th colspan="7" class="clear" style="display: none;">Clear</th>
+			</tr>
+			</tfoot>
+		</table>
+	</div>
+</div>
+<script src="./static/js/jquery-3.5.1/jquery-3.5.1/jquery-3.5.1.min.js"></script>
+<script src="./static/plugins/bootstrap-3.4.1/js/bootstrap.min.js"></script>
+<script src="./static/plugins/bootstrap-datepicker-1.6.4-dist/js/bootstrap-datepicker.min.js"></script>
+<script type="text/javascript">
+	$('#sandbox-container div').datepicker({
+		format: "yyyy-mm-dd",
+		autoclose: true,
+		todayHighlight: true,
+		toggleActive: true
+	});
+</script>
+
+</body>
+</html>

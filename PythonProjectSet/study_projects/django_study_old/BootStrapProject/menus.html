@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>菜单的切换</title>
+	<style>
+		.menus {
+			width: 200px;
+			height: 800px;
+			border: 1px solid #0a0a0a;
+		}
+		.menus .header {
+			background-color: gold;
+			padding: 10px 5px;
+			border-bottom: 1px dotted #aaa;
+			cursor: pointer;
+		}
+		
+		.menus .container a {
+			display: block;
+			padding: 5px 5px;
+			border-bottom: 1px dotted #aaa;
+		}
+		
+		.hide {
+			display: none;
+		}
+	</style>
+</head>
+<body>
+<div class="menus">
+	<div class="item">
+		<div class="header" onclick="clickMe(this)">甘肃</div>
+		<div class="container">
+			<a href="">兰州</a>
+			<a href="">天水</a>
+			<a href="">白银</a>
+		</div>
+	</div>
+	
+	<div class="item">
+		<div class="header" onclick="clickMe(this)">北京</div>
+		<div class="container hide">
+			<a href="">朝阳区</a>
+			<a href="">海淀区</a>
+			<a href="">王府井</a>
+		</div>
+	</div>
+	
+	<div class="item">
+		<div class="header" onclick="clickMe(this)">甘肃2</div>
+		<div class="container hide">
+			<a href="">兰州</a>
+			<a href="">天水</a>
+			<a href="">白银</a>
+		</div>
+	</div>
+	
+	<div class="item">
+		<div class="header" onclick="clickMe(this)">北京2</div>
+		<div class="container hide">
+			<a href="">朝阳区</a>
+			<a href="">海淀区</a>
+			<a href="">王府井</a>
+		</div>
+	</div>
+</div>
+
+<script src="./static/js/jquery-3.5.1/jquery-3.5.1/jquery-3.5.1.min.js"></script>
+
+<script>
+	function clickMe(self) {
+		// 让自己下面的功能显示出来
+		// 让其他的功能不显示
+		
+		$(self).next().removeClass("hide")
+		$(self).parent().siblings().find(".container").addClass("hide")
+	}
+</script>
+</body>
+</html>

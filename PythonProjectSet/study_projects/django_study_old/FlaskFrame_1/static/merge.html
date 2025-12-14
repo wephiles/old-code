@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>整合</title>
+	<style>
+		body{
+			margin: 0;
+			font: 14px/1.5 Helvetica Neue,Helvetica,Arial,Microsoft Yahei,Hiragino Sans GB,Heiti SC,WenQuanYi Micro Hei,sans-serif;
+		}
+		img{
+			width: 100%;
+			height: 100%;
+		}
+		.header{
+			/* height: 38px; */
+			background-color: #333;
+		}
+		.header .menu{
+			float: left;
+			color: #b0b0b0;
+			height: 38px;
+			line-height: 38px;
+			font-size: 12px;
+		}
+		.header .account{
+			float: right;
+			color: #b0b0b0;
+			height: 38px;
+			line-height: 38px;
+			font-size: 12px;
+		}
+		.header a{
+			color: #b0b0b0;
+			line-height: 40px;
+			display: inline-block;;
+			font-size: 12px;
+			margin-right: 5px;
+		}
+		.header .container .menu a{
+			text-decoration: none;
+		}
+		.header .container .menu a:hover{
+			color: chartreuse;
+		}
+		.header .container .account a{
+			text-decoration: none;
+		}
+		.header .container .account a:hover{
+			color: chartreuse;
+		}
+		
+		.sub-header{
+			height: 100px;
+			/*background-color: #9b9b9b;*/
+		}
+		.container{
+			width: 1300px;
+			/*height: 38px;*/
+			margin: 0 auto;
+			/* 一定要设置宽度 否则居中显示不好看 */
+			/*border: 2px solid  blue;*/
+		}
+		.sub-header .ht{
+			height: 100px;
+		}
+		.sub-header .logo{
+			width: 234px;
+			/*border: 2px solid yellow;*/
+			float: left;
+		}
+		.sub-header .logo a{
+			margin-top: 22px;
+			display: inline-block
+		}
+		.sub-header .logo a img{
+			height: 56px;
+			width: 56px;
+		}
+		.sub-header .menu-list{
+			width: 650px;
+			float: left;
+			line-height: 100px;
+			/*border: 2px solid darkcyan;*/
+		}
+		.sub-header .menu-list a{
+			padding: 0 10px 0 10px;
+			display: inline-block;
+			color: #333;
+			font-size: 16px;
+			text-decoration: none;
+		}
+		.sub-header .menu-list a:hover{
+			color: chartreuse;
+		}
+		.sub-header .search{
+			width: 234px;
+			float: right;
+			/*border: 2px solid darkred;*/
+		}
+		
+		.slider .container .sd-image {
+			width: 1226px;
+			height: 460px;
+		}
+		
+		.left_float{
+			float: left;
+		}
+		.news .container .channel{
+			width: 228px;
+			height: 164px;
+			padding: 3px;
+			background-color: #5f5750;
+		}
+		.news .container .list-item{
+			width: 316px;
+			height: 170px;
+		}
+		.news{
+			margin-top: 20px;
+		}
+		.news .channel .item{
+			height: 82px;
+			width: 76px;
+			text-align: center;
+		}
+		.news .channel .item img{
+			width: 24px;
+			height: 24px;
+			display: block;
+			margin: 0 auto 4px;
+		}
+		.news .channel .item a{
+			font-size: 12px;
+			display: inline-block;
+			padding-top: 20px;
+			color: #fff;
+			text-decoration: none;
+			opacity: 0.7;
+		}
+		.news .channel .item a:hover{
+			opacity: 1;
+		}
+		
+		.back{
+			position: fixed;
+			width: 60px;
+			height: 60px;
+			border: 2px solid black;
+			right: 10px;
+			bottom: 10px;
+		}
+		
+		.app{
+			position: relative;
+		}
+		.app .download{
+			position: absolute;
+			height: 100px;
+			width: 100px;
+			top: 38px;
+			display: none;
+		}
+		.app:hover .download{
+			display: block;
+		}
+	</style>
+</head>
+<body>
+	<div class="header">
+		<div class="container">
+			<div class="menu">
+				<a href="https://i.mi.com/">小米官网</a>
+				<a href="https://i.mi.com/">小米商城</a>
+				<a href="https://i.mi.com/">MIUI</a>
+				<a href="https://i.mi.com/">LOT</a>
+				<a href="https://i.mi.com/">云服务</a>
+				<a href="https://i.mi.com/">天星数科</a>
+				<a href="https://i.mi.com/">有品</a>
+				<a href="https://i.mi.com/">小爱开放平台</a>
+				<a href="https://i.mi.com/">企业团购</a>
+				<a href="https://i.mi.com/">资质证照</a>
+				<a href="https://i.mi.com/">协议规则</a>
+				<a href="https://i.mi.com/" class="app">下载APP
+					<div class="download">
+						<img src="images/qrcode.png" alt="二维码">
+					</div>
+				</a>
+				<a href="https://i.mi.com/">SelectLocation</a>
+			</div>
+			<div class="account">
+				<a href="https://i.mi.com/">登录</a>
+				<a href="https://i.mi.com/">注册</a>
+				<a href="https://i.mi.com/">消息通知</a>
+				<a href="https://i.mi.com/">购物车</a>
+			</div>
+			<div style="clear: both"></div>
+		</div>
+	</div>
+	
+	<div class="sub-header">
+		<div class="container">
+			<div class="ht logo">
+				<a href="https://www.mi.com/">
+					<img src="images/logo-mi2.png" alt="">
+				</a>
+			</div>
+			<div class="ht menu-list">
+				<a href="https://i.mi.com/">小米手机</a>
+				<a href="https://i.mi.com/">红米手机</a>
+				<a href="https://i.mi.com/">电视</a>
+				<a href="https://i.mi.com/">笔记本</a>
+				<a href="https://i.mi.com/">平板</a>
+				<a href="https://i.mi.com/">家电</a>
+				<a href="https://i.mi.com/">路由器</a>
+				<a href="https://i.mi.com/">服务中性</a>
+				<a href="https://i.mi.com/">社区</a>
+			</div>
+			<div class="ht search">这是搜索框</div>
+			<div style="clear: both"></div>
+		</div>
+	</div>
+
+	<div class="slider">
+		<div class="container">
+			<div class="sd-image">
+				<img src="images/89b9804e4b794f230252bc99fb55faa5.jpg" alt="这是一张图片">
+			</div>
+		</div>
+	</div>
+
+	<div class="news">
+		<div class="container">
+			<div class="channel left_float" style="margin-right: 14px">
+				<div class="item left_float">
+					<a href="https://www.mi.com/">
+						<img src="images/b1.png" alt="图标">
+						<span>保障服务</span>
+						
+					</a>
+				</div>
+				<div class="item left_float">
+					<a href="https://www.mi.com/">
+						<img src="images/b2.png" alt="图标">
+						<span>企业团购</span>
+					</a>
+				</div>
+				<div class="item left_float">
+					<a href="https://www.mi.com/">
+						<img src="images/b1.png" alt="图标">
+						<span>F码通道</span>
+					</a>
+				</div>
+				<div class="item left_float">
+					<a href="https://www.mi.com/">
+						<img src="images/b2.png" alt="图标">
+						<span>米粉卡</span>
+					</a>
+				</div>
+				<div class="item left_float">
+					<a href="https://www.mi.com/">
+						<img src="images/b1.png" alt="图标">
+						<span>以旧换新</span>
+					</a>
+				</div>
+				<div class="item left_float">
+					<a href="https://www.mi.com/">
+						<img src="images/b2.png" alt="图标">
+						<span>话费充值</span>
+					</a>
+				</div>
+				<div style="clear: both"></div>
+			</div>
+			
+			<div class="list-item left_float" style="margin-right: 15px">
+				<img src="images/0cf5e958bc88727b50c5c5fba7a8f47a.jpg" alt="图片1">
+			</div>
+			
+			<div class="list-item  left_float" style="margin-right: 15px">
+				<img src="images/6dd2f3e0de4e6cbba98fd3799cfa5bf7.jpg" alt="图片2">
+			</div>
+			
+			<div class="list-item  left_float">
+				<img src="images/d7d4be1a9e701e16de498f89b1865867.jpg" alt="图片3">
+			</div>
+			<div style="clear: both"></div>
+		</div>
+	</div>
+
+	<div class="back">
+	</div>
+</body>
+</html>

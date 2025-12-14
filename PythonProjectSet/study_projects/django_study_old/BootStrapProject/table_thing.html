@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>表格操作</title>
+</head>
+<body>
+<table border="1">
+	<thead>
+	<tr>
+		<th>ID</th>
+		<th>Name</th>
+		<th>Operation</th>
+	</tr>
+	</thead>
+	<tbody>
+	<tr>
+		<td>1</td>
+		<td>jinyu</td>
+		<td>
+			<input type="button" value="编辑">
+			<input type="button" value="删除" class="delete">
+		</td>
+	</tr>
+	
+	<tr>
+		<td>1</td>
+		<td>jinyu</td>
+		<td>
+			<input type="button" value="编辑">
+			<input type="button" value="删除" class="delete">
+		</td>
+	</tr>
+	
+	<tr>
+		<td>1</td>
+		<td>jinyu</td>
+		<td>
+			<input type="button" value="编辑">
+			<input type="button" value="删除" class="delete">
+		</td>
+	</tr>
+	
+	<tr>
+		<td>1</td>
+		<td>jinyu</td>
+		<td>
+			<input type="button" value="编辑">
+			<input type="button" value="删除" class="delete">
+		</td>
+	</tr>
+	</tbody>
+</table>
+
+<script src="./static/js/jquery-3.5.1/jquery-3.5.1/jquery-3.5.1.min.js"></script>
+<script>
+	// 特殊的格式，当页面框架加载完成之后，自动执行
+	$(function () {
+		// 找到所有class=delete的标签 删除之
+		$(".delete").click(function () {
+			// 删除当前行的数据
+			$(this).parent().parent().remove();
+		});
+	});
+</script>
+
+</body>
+</html>

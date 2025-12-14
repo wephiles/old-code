@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>事件的绑定</title>
+</head>
+<body>
+
+<input type="text" placeholder="输入信息" id="getText">
+<input type="button" value="点击添加" ondblclick="add_city()">
+<ul id="city">
+
+</ul>
+<script type="text/javascript">
+	function add_city() {
+		// 找到标签
+		var messageInputTag = document.getElementById("getText");
+		
+		// 获取用户输入的内容
+		var textInput = messageInputTag.value;
+		
+		//判断用户输入是否为空，只有不是空才能继续
+		if (textInput.length > 0) {
+			// 创建一个标签 用以保存数据并且准备以后展示，中间的文本信息就是用户输入的内容
+			var newTag = document.createElement("li");
+			
+			// 将文本添加进去
+			newTag.innerText = textInput;
+			
+			// 定位标签并把把标签添加上去
+			var parentTag = document.getElementById("city");
+			parentTag.appendChild(newTag);
+			
+			// 让input框内容重新为空
+			messageInputTag.value = "";
+		}
+		else {
+			alert("输入内容为空，请重新输入！")
+		}
+		
+	}
+</script>
+</body>
+</html>

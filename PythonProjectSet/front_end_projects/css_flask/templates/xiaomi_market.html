@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>小米商城-瑾瑜</title>
+    <style>
+        body {
+            margin: 0;
+        }
+
+        img {
+            width: 100%;
+            height: 100%;
+        }
+
+        .left {
+            float: left;
+        }
+
+        .header {
+            /*height: 40px;*/
+            font-size: 12px;
+            color: #b0b0b0;
+            background: #333;
+        }
+
+        .header a {
+            height: 40px;
+            display: inline-block;
+            /*border-right-style: solid;*/
+            margin-right: 10px;
+        }
+
+        .container {
+            width: 1226px;
+            /*margin-left: auto;*/
+            /*margin-right: auto;*/
+            margin: 0 auto;
+        }
+
+        .header .container {
+            width: 1226px;
+            /*margin-left: auto;*/
+            /*margin-right: auto;*/
+            margin: 0 auto;
+        }
+
+        .header .menu {
+            float: left;
+            /*height: 40px;*/
+            line-height: 40px;
+            font-family: '微软雅黑', '华文细黑', 'Menlo', serif;
+        }
+
+        .header .account {
+            float: right;
+            /*height: 40px;*/
+            line-height: 40px;
+            font-family: '华文细黑', 'Menlo', serif;
+        }
+
+        .sub-header {
+            height: 100px;
+            background: #f2f2f2;
+        }
+
+        .sub-header .container {
+            width: 1226px;
+            /*margin-left: auto;*/
+            /*margin-right: auto;*/
+            margin: 0 auto;
+            font-size: 16px;
+            font-family: '微软雅黑', '华文细黑', 'Menlo', serif;
+            height: 100px;
+        }
+
+        .sub-header .logo {
+            width: 234px;
+            height: 100px;
+            line-height: 100px;
+            float: left;
+        }
+
+        .sub-header .menu-list {
+            /*width: 234px;*/
+            line-height: 100px;
+            height: 100px;
+            float: left;
+        }
+
+        .sub-header .menu-list a:hover {
+            /*鼠标放上去就会应用下面的效果:*/
+            color: #b0b0b0;
+        }
+
+        .sub-header .menu-list a {
+            /*width: 234px;*/
+            padding: 0 5px;
+            display: inline-block;
+            height: 100px;
+            line-height: 100px;
+            margin-right: 5px;
+            color: #333;
+            /* 取消下划线 */
+            text-decoration: none;
+        }
+
+        .sub-header .search {
+            /*width: 234px;*/
+            height: 100px;
+            line-height: 100px;
+            float: right;
+        }
+
+        .sub-header .xiaomi_logo {
+            /* a标签是行内标签 如果只设置margin-top,那么还是不会变 所以要搞成inline-block */
+            display: inline-block;
+            margin-top: 22px;
+        }
+
+        .slider .slider-img {
+            width: 1226px;
+            height: 460px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .slider .slider-img img {
+            /*占父亲区域的宽高后,下面控制图片和父亲区域一样大*/
+            width: 100%;
+            height: 100%;
+        }
+
+        .news .channel {
+            background: #5f5750;
+            width: 228px;
+            height: 164px;
+            padding: 3px;
+        }
+
+        .news .list-item {
+            width: 316px;
+            height: 170px;
+        }
+
+        .news .channel .item {
+            height: 86px;
+            width: 76px;
+            text-align: center;
+            /*border: 1px solid red;*/
+        }
+
+        .news .channel .item img {
+            height: 24px;
+            width: 24px;
+            display: block;
+            margin: 0 auto;
+        }
+
+        .news {
+            margin-top: 14px;
+        }
+
+        .news .channel .item a {
+            opacity: 0.5;
+            text-decoration: none;
+            display: inline-block;
+            padding-top: 18px;
+            font-size: 12px;
+            color: rgba(255, 255, 255, 0.7);
+        }
+
+        .news .channel .item a:hover {
+            opacity: 1;
+        }
+
+        .news .channel .item a div {
+            margin-bottom: 4px;
+        }
+
+        .back {
+            position: fixed;
+            width: 60px;
+            height: 60px;
+            border: 1px solid red;
+            right: 0;
+            bottom: 20px;
+        }
+
+        .app {
+            position: relative;
+        }
+
+        .app .download {
+            position: absolute;
+            height: 70px;
+            width: 70px;
+            /*top: 30px;*/
+            display: none;
+        }
+
+        .app:hover .download {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+
+<div class="header">
+    <div class="container">
+        <div class="menu">
+            <a>小米商城</a>
+            <a>MIUI</a>
+            <a>IoT</a>
+            <a>云服务</a>
+            <a>天星数科</a>
+            <a>有品</a>
+            <a>小爱开放平台</a>
+            <a>企业团购</a>
+            <a>资质证照</a>
+            <a>协议规则</a>
+            <a class="app">
+                下载App
+                <div class="download">
+                    <img src="two_wei_code.png"/>
+                </div>
+            </a>
+            <a>智能生活</a>
+        </div>
+        <div class="account">
+            <a>登录</a>
+            <a>注册</a>
+            <a>消息通知</a>
+            <a>购物车</a></div>
+        <div style="clear: both;"></div>
+    </div>
+</div>
+
+<div class="sub-header">
+    <div class="container">
+        <div class="logo">
+            <a class="xiaomi_logo" href="https://www.baidu.com">
+                <img src="xiaomi_logo.png" style="height: 56px; width: 56px;"/>
+            </a>
+        </div>
+        <div class="menu-list">
+            <a href="https://www.baidu.com">Xiaomi手机</a>
+            <a href="https://www.baidu.com">Redmi手机</a>
+            <a href="https://www.baidu.com">电视</a>
+            <a href="https://www.baidu.com">笔记本</a>
+            <a href="https://www.baidu.com">平板</a>
+            <a href="https://www.baidu.com">家电</a>
+            <a href="https://www.baidu.com">路由器</a>
+            <a href="https://www.baidu.com">服务中心</a>
+            <a href="https://www.baidu.com">社区</a>
+        </div>
+        <div class="search">搜索</div>
+        <div style="clear: both;"></div>
+    </div>
+</div>
+
+<div class="slider">
+    <div class="container">
+        <div class="slider-img">
+            <img src="slider_img.jpg" alt=""/>
+        </div>
+    </div>
+</div>
+
+<div class="news">
+    <div class="container">
+        <div class="channel left">
+            <div class="item left">
+                <a href="https://www.baidu,com">
+                    <div>
+                        <img src="time.png" alt=""/>
+                    </div>
+                    <span>小米秒杀</span>
+                </a>
+            </div>
+            <div class="item left">
+                <a href="https://www.baidu,com">
+                    <div>
+                        <img src="time.png" alt=""/>
+                    </div>
+                    <span>企业团购</span>
+                </a>
+            </div>
+            <div class="item left">
+                <a href="https://www.baidu,com">
+                    <div>
+                        <img src="time.png" alt=""/>
+                    </div>
+                    <span>F码通道</span>
+                </a>
+            </div>
+            <div class="item left">
+                <a href="https://www.baidu,com">
+                    <div>
+                        <img src="time.png" alt=""/>
+                    </div>
+                    <span>米粉卡</span>
+                </a>
+            </div>
+            <div class="item left">
+                <a href="https://www.baidu,com">
+                    <div>
+                        <img src="time.png" alt=""/>
+                    </div>
+                    <span>以旧换新</span>
+                </a>
+            </div>
+            <div class="item left">
+                <a href="https://www.baidu,com">
+                    <div>
+                        <img src="time.png" alt=""/>
+                    </div>
+                    <span>话费充值</span>
+                </a>
+            </div>
+            <div style="clear: both;"></div>
+        </div>
+        <div class="list-item left" style="margin-left: 14px;">
+            <img src="xmad_1.jpg" alt=""/>
+        </div>
+        <div class="list-item left" style="margin-left: 15px;">
+            <img src="xmad_2.jpg" alt=""/>
+        </div>
+        <div class="list-item left" style="margin-left: 15px;">
+            <img src="xmad_3.jpg" alt=""/>
+        </div>
+        <div style="clear: both;"></div>
+    </div>
+</div>
+
+<div class="back">返回顶部</div>
+
+<div style="height: 500px;"></div>
+</body>
+</html>

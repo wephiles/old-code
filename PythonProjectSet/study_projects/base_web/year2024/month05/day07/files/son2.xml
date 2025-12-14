@@ -1,0 +1,6 @@
+<?xml version='1.0' encoding='utf-8'?>
+<family>
+    <son1 name="son1">
+        <grandson name="grandson" />
+    </son1>
+</family>

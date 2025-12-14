@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>瑾瑜-为理想而战斗！消息中心</title>
+</head>
+<body>
+<h1>news 页面</h1>
+{{ n1 }}
+
+{% for item in n1 %}
+	<div>
+		title: {{ item.title }}time: {{ item.time }}
+	</div>
+{% endfor %}
+</body>
+</html>

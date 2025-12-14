@@ -1,0 +1,87 @@
+{% extends 'layout.html' %}
+{% block title %}
+	<title>瑾瑜-而我将见你未见的世界，写你未写的诗篇。</title>
+{% endblock %}
+
+{% block content %}
+	<div class="container-table">
+		<div class="panel panel-default add-panel" style="margin-top: 20px;">
+			<div class="panel-heading">
+
+				<h3 class="panel-title">
+					<span class="glyphicon glyphicon-repeat" aria-hidden="true" style="margin-right: 4px;"></span>
+					用户操作
+				</h3>
+			</div>
+			<div class="panel-body">
+				<div class="new">
+					<div class="my-button">
+						<a href="/user/add/">
+							<button type="button" class="btn btn-success">
+								<i class="fa fa-plus-square-o" aria-hidden="true" style="margin-right: 3px;"></i>
+								添加用户
+							</button>
+						</a>
+
+						<a href="/user/model/form/add/">
+							<button type="button" class="btn btn-success">
+								<i class="fa fa-plus-square-o" aria-hidden="true" style="margin-right: 3px;"></i>
+								添加用户ModelForm
+							</button>
+						</a>
+
+					</div>
+					<div style="margin-bottom: 10px; margin-top: 10px;">
+					<span class="glyphicon glyphicon-th" aria-hidden="true"
+					      style="margin-left: 10px; margin-right: 5px;"></span>
+						用户信息
+					</div>
+					<div class="my-table">
+						<table class="table table-hover table-bordered table-striped">
+							<tbody>
+							<tr>
+								<th> ID</th>
+								<th> 姓名</th>
+								<th> 性别</th>
+								<th> 密码</th>
+								<th> 年龄</th>
+								<th> 账户余额</th>
+								<th> 入职时间</th>
+								<th> 部门</th>
+								<th> 操作</th>
+							</tr>
+							{% for item in  queryset %}
+								<tr>
+									<td>{{ item.id }}</td>
+									<td>{{ item.name }}</td>
+									<td>{{ item.get_gender_display }}</td>
+									<td>{{ item.password }}</td>
+									<td>{{ item.age }}</td>
+									<td>{{ item.account }}</td>
+									<td>{{ item.create_time|date:"Y-m-d" }}</td>
+									<td>{{ item.depart.title }}</td>
+									<td>
+										<a href="/user/{{ item.id }}/edit/" class="btn btn-primary btn-xs">
+											<i class="fa fa-pencil" aria-hidden="true"></i>
+											编辑
+										</a>
+										<a href="/user/{{ item.id }}/delete/" class="btn btn-danger btn-xs">
+											<i class="fa fa-trash-o fa-lg"></i>
+											删除
+										</a>
+									</td>
+								</tr>
+							{% endfor %}
+							</tbody>
+						</table>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div>
+			<ul class="pagination clearfix">
+				{{ page_string }}
+			</ul>
+		</div>
+	</div>
+{% endblock %}

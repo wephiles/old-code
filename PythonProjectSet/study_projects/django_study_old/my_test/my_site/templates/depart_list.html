@@ -1,0 +1,71 @@
+{% extends 'layout.html' %}
+
+{% block title %}
+	<title>瑾瑜-孩子们啊，安睡梦乡，像你深爱的那样。</title>
+{% endblock %}
+
+{% block content %}
+
+	<div class="container-table">
+		<div class="panel panel-default add-panel" style="margin-top: 20px;">
+			<div class="panel-heading">
+
+				<h3 class="panel-title">
+					<span class="glyphicon glyphicon-repeat" aria-hidden="true" style="margin-right: 4px;"></span>
+					部门操作
+				</h3>
+			</div>
+			<div class="panel-body">
+				<div class="new">
+					<div class="my-button">
+						<a href="/depart/add/">
+							<button type="button" class="btn btn-success">
+								<i class="fa fa-plus-square-o" aria-hidden="true" style="margin-right: 3px;"></i>
+								新建部门
+							</button>
+						</a>
+					</div>
+					<div style="margin-bottom: 10px; margin-top: 10px;">
+					<span class="glyphicon glyphicon-th" aria-hidden="true"
+					      style="margin-left: 10px; margin-right: 5px;"></span>
+						部门列表
+					</div>
+					<div class="my-table">
+						<table class="table table-hover table-bordered table-striped">
+							<tbody>
+							<tr>
+								<th>#</th>
+								<th>部门名称</th>
+								{#							<th>表头2</th>#}
+								<th>操作</th>
+							</tr>
+							{% for item in  queryset %}
+								<tr>
+									<td>{{ item.id }}</td>
+									<td>{{ item.title }}</td>
+									<td>
+										<a href="/depart/{{ item.id }}/edit/" class="btn btn-primary btn-xs">
+											<i class="fa fa-pencil" aria-hidden="true"></i>
+											编辑
+										</a>
+										<a href="/depart/delete/?nid={{ item.id }}" class="btn btn-danger btn-xs">
+											<i class="fa fa-trash-o fa-lg"></i>
+											删除
+										</a>
+									</td>
+								</tr>
+							{% endfor %}
+							</tbody>
+						</table>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div>
+			<ul class="pagination clearfix">
+				{{ page_string }}
+			</ul>
+		</div>
+	</div>
+
+{% endblock %}

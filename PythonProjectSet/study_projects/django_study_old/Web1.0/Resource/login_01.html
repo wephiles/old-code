@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <title></title>
+    <!-- <script src="https://code.jquery.com/jquery-3.6.3.slim.min.js"></script> 这一段引用必须要加在这里不然js代码就无效 -->
+    <script src="https://code.jquery.com/jquery-3.6.3.slim.min.js"></script>
+    <link rel="stylesheet" href="login_01.css">
+    <script src="login_01.js"></script>
+  </head>
+  <body>
+    <!-- 用户登录界面 -->
+    <div class="login">
+      <h2>用户登录</h2>
+      <div class="login_box">
+        <input type="text" id='name' maxlength='20'/>
+        <label for="name">账号</label>
+      </div>
+      <div class="login_box">
+        <input type="password" id='pwd' maxlength='20'>
+        <label for="pwd">密码</label>
+      </div>
+      <a class="login-a">登录<span></span><span></span><span></span><span></span></a>
+      <a class="enroll-a">注册<span></span><span></span><span></span><span></span></a>
+    </div>
+ 
+    <!-- 用户注册界面 -->
+    <div class="login enroll" style="display: none;">
+      <h2>用户注册</h2>
+      <div class="login_box">
+        <input type="text" id="name1" maxlength='20'/>
+        <label for="name">注册账号</label>
+      </div>
+      <div class="login_box">
+        <input type="password" id="pwd1" maxlength='20'>
+        <label for="pwd">注册密码</label>
+      </div>
+      <a class="login-b">登录<span></span><span></span><span></span><span></span></a>
+      <a class="enroll-b">注册<span></span><span></span><span></span><span></span></a>
+    </div>
+  </body>
+</html>

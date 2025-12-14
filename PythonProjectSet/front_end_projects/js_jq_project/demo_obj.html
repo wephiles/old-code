@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>动态表格</title>
+</head>
+<body>
+<table border="1">
+    <thead>
+    <tr>
+        <th>ID</th>
+        <th>name</th>
+        <th>age</th>
+    </tr>
+    </thead>
+    <tbody id="body">
+
+    </tbody>
+</table>
+
+<script type="text/javascript">
+    var data_list = [
+        {id: 1, name: "xxx", age: 19,},
+        {id: 2, name: "xxx", age: 19,},
+        {id: 3, name: "xxx", age: 19,},
+        {id: 4, name: "xxx", age: 19,},
+        {id: 5, name: "xxx", age: 19,},
+        {id: 6, name: "xxx", age: 19,},
+    ];
+    // 创建tr
+
+    for (var idx in data_list) {
+        var info = data_list[idx]
+        var tr = document.createElement("tr");
+        for (key in info) {
+            var text = info[key];
+            var td = document.createElement("td");
+            td.innerText = text;
+            tr.appendChild(td);
+        }
+        tr.appendChild(td);
+        var body = document.getElementById("body");
+        body.appendChild(tr);
+    }
+
+</script>
+</body>
+</html>

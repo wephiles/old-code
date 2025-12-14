@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>UserAdd</title>
+</head>
+<body>
+<h1>UserAdd</h1>
+
+<form action="/info/add/" method="post">
+    <input type="text" name="name" placeholder="name"/>
+    <input type="password" name="password" placeholder="password"/>
+    <input type="text" name="age" placeholder="age"/>
+    <input type="submit" value="提交" />
+    {% csrf_token %}
+</form>
+</body>
+</html>
