@@ -17,3 +17,21 @@
 	- utils.py ············· 一些写好的工具，可以直接拿来用
 ```
 
+# 2025.12.14日修改
+
+2025年12月，我新买了一台电脑，旧的代码准备先提交到github上。
+
+所有在2025.12.09以后新写的代码再建一个github仓库，用以协作开发。
+
+修改后，本仓库的数据如下：
+
+```
+[root]
+	- .git
+	- JupyterProjectSet
+	- PythonProjectSet
+	- utils
+	- .gitignore
+	- README.md
+```
+
